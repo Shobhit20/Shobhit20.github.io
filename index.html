@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style_website.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+  
+    <nav id="nav">
+        <div class="header">
+            <ul class="nav-links">
+                <li><a id="blueNav" class="home active" href="#aboutUs"><button class="nav-btn">About</button></a></li>
+                <li><a id="orangeNav" class="aboutUs" href="#extra"><button class="nav-btn">Proficiencies</button></a></li>
+                <li><a id="blueNav" class="team" href="#extra"><button class="nav-btn">Projects</button></a></li>
+                <li><a id="orangeNav" class="timeline" href="#extra" href="#other-platforms"><button class="nav-btn">Other handles</button></a></li>
+                <li><a id="blueNav" class="contactUs" href="#extra"><button class="nav-btn">Contact</button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+  <div class="container" id="container">
+
+    <!-- Particle js section -->
+    <section id="home">
+      <div id="particles-js">
+      </div>
+      <div class="overlay-content">
+        <div class="section_pic_container">
+          <img src="./assets/smprofile.jpeg" alt="Shobhit Maheshwari Profile Picture" />
+        </div>
+        <div class="section_text">
+          <h1 class="title_1">Shobhit Maheshwari</h1>
+          <h1 class="title_1">Data Scientist, Machine Learning</h1>
+          <div class="btn_container">
+            <button class="btn_color" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutUs">
+        <div class="content">
+          <h2>About us</h2>
+          <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div id="imgDiv">
+          <img src="about_us.jpeg" id="aboutUsImg" alt="Italian Trulli">
+        </div>
+    </section>
+
+    <section id="extra">
+        <div class="content">
+          <h2>About us</h2>
+          <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div id="imgDiv">
+          <img src="about_us.jpeg" id="aboutUsImg" alt="Italian Trulli">
+        </div>
+    </section>
+  </div>
+
+</body>
+</html>
+
+<script>
+const container = document.getElementById('container');
+const sections = document.querySelectorAll('section');
+
+let currentSection = 0;
+const sectionCount = sections.length;
+
+container.addEventListener('wheel', (e) => {
+    if (e.deltaY > 0) {
+        // Scrolling down
+        if (currentSection < sectionCount - 1) {
+            currentSection++;
+        }
+    } else {
+        // Scrolling up
+        if (currentSection > 0) {
+            currentSection--;
+        }
+    }
+
+    sections[currentSection].scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+
+</script>
+<script src="particles.js"></script>
+<script src="myjs.js"></script>

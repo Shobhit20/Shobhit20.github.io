@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+    overflow: hidden; /* Prevent default browser scroll */
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container{
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+    width:100%;
+}
+
+section {
+    height: 100vh; /* Ensure each section occupies the full viewport height */
+    scroll-snap-align: start; /* Align each section to the start */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+  
+#nav {
+    position: fixed; /* Fixed positioning to keep the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3; /* Ensure navbar is above background and content */
+    background-color: rgba(255, 255, 255, 0.25); /* Semi-transparent background, adjust as needed */
+    color: #fff; /* Text color */
+}
+
+.header {
+    max-width: 100%; /* Adjust to your layout */
+    margin: 0 auto; /* Center align if needed */
+    padding: 10px 30px; /* Adjust padding as needed */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Align items in a column if needed */
+    align-items: flex-end; /* Align items to the end (right side) */
+      
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #156082; /* Text color for links */
+    text-decoration: none;
+    padding: 0px 0px;
+    display: inline-block;
+    font-weight: bold; /* Highlight active link */
+    font-size: 20px
+}
+
+.nav-links a.active {
+    font-weight: bold; /* Highlight active link */
+}
+.nav-links .nav-btn {
+    position: relative;
+    background: none; /* No background color */
+    border: none; /* Remove default button border */
+    color: #156082; /* Text color */
+    padding: 10px 25px; /* Padding around button text */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.5s ease; /* Smooth transition for text color */
+    font-weight: bold; /* Highlight active link */
+    font-size: 20px
+  }
+  
+  .nav-links .nav-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Underline thickness */
+    background-color: #156082; /* Underline color */
+    transition: width 0.5s ease; /* Smooth transition for underline width */
+  }
+  
+  .nav-links .nav-btn:hover::after {
+    width: 100%; /* Full width underline on hover */
+  }
+  
+
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+#aboutUs {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+	background: #156082;
+}
+
+#extra {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+	background: #014495;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Background layer */
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    z-index: 1; /* Overlay content above background */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+  
+.flex-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Adjust max-width as needed */
+}
+  
+.section_pic_container {
+    margin-right: 0px; /* Adjust space between image and text */
+}
+
+  .section_pic_container img {
+    border-radius: 50%; /* Makes the profile picture circular */
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+    border: 10px solid #fff; /* White border, adjust thickness and color as needed */
+    box-shadow: 0 0 0 20px #156082; 
+    margin-right:60px
+  }
+  
+  .section_text {
+    max-width: 600px; /* Adjust width as needed */
+    color: #156082; /* Text color */
+    text-align: left; /* Align text to the left */
+    font-size: 30px;
+    margin-left:60px
+  }
+
+.btn_color {
+    background-color: #156082; /* Adjust button color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn_color:hover {
+    background-color: #156082; /* Adjust hover color */
+    
+}
+
+
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transform: translateY(-20px);
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+
+
