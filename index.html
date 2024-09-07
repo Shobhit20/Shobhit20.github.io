@@ -14,11 +14,12 @@
     <nav id="nav">
         <div class="header">
             <ul class="nav-links">
-                <li><a id="blueNav" class="home active" href="#aboutUs"><button class="nav-btn">About</button></a></li>
-                <li><a id="orangeNav" class="aboutUs" href="#extra"><button class="nav-btn">Proficiencies</button></a></li>
-                <li><a id="blueNav" class="team" href="#extra"><button class="nav-btn">Projects</button></a></li>
-                <li><a id="orangeNav" class="timeline" href="#extra" href="#other-platforms"><button class="nav-btn">Other handles</button></a></li>
-                <li><a id="blueNav" class="contactUs" href="#extra"><button class="nav-btn">Contact</button></a></li>
+                <li><a href="#home"><button id="whiteNav" class="nav-btn home active">Home</button></a></li>
+                <li><a href="#about"><button id="blueNav" class="nav-btn about">About</button></a></li>
+                <li><a href="#experience"><button id="whiteNav" class="nav-btn experience">Experience</button></a></li>
+                <li><a href="#skills"><button id="blueNav" class="nav-btn skills">Skills</button></a></li>
+                <li><a href="#projects" href="#projects"><button id="whiteNav" class="nav-btn projects">Projects</button></a></li>
+                <li><a href="#contact"><button id="blueNav" class="nav-btn contact">Contact</button></a></li>
             </ul>
         </div>
     </nav>
@@ -47,56 +48,123 @@
       </div>
     </section>
 
-    <section id="aboutUs">
+    <!-- About -->
+    <section id="about">
         <div class="content">
-          <h2>About us</h2>
-          <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h1 class="title_2">About Me</h1>
+            <div class="text_container">
+                <p>I have a background in Mechanical Engineering and my journey into data science and machine learning is a captivating evolution. I've always been drawn to the world of problem-solving, and data provides the perfect canvas for my curious mind to explore and innovate.</p>
+                <p>What excites me most about this field is its constant evolution, dynamic challenges and the continuous learning it demands. I firmly believe in the transformative power of data to reshape industries and drive innovation, and I'm here to be a part of that transformation.</p>
+                <p>Beyond data, I indulge in my love for sports, prioritize a healthy lifestyle and find joy in the rhythm of good music. These interests provide balance, fuel creativity and keep me energized for data's challenges.</p>
+            </div>
         </div>
-        <div id="imgDiv">
-          <img src="about_us.jpeg" id="aboutUsImg" alt="Italian Trulli">
-        </div>
+        
     </section>
 
-    <section id="extra">
-        <div class="content">
-          <h2>About us</h2>
-          <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <!-- Experience -->
+    <section id="experience">
+      <div class="timeline">
+        <div class="html-element">
+
+            <div class="timeline-item">
+                <div class="timeline-date">Sep 2023 - Present  </div>
+                <div class="timeline-bar">
+                    <div class="timeline-img">
+                        <img src="assets/edinburghlogo.png" alt="University of Edinburgh">
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-title">M. Sc. in Data Science, University of Edinburgh</div>
+                   
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Jul 2020 - Aug 2023</div>
+                <div class="timeline-bar">
+                    <div class="timeline-img">
+                        <img src="assets/roadzen.png" alt="Roadzen">
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-title">Senior Data Scientist, Data Scientist</div>
+                    
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Jan 2019 - Jul 2020</div>
+                <div class="timeline-bar">
+                    <div class="timeline-img">
+                        <img src="assets/spoonshot.png" alt="Spoonshot">
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-title">Data Scientist, Data Science Intern</div>
+                    
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Aug 2015 - Jun 2019</div>
+                <div class="timeline-bar">
+                    <div class="timeline-img">
+                        <img src="assets/DU.png" alt="Delhi University">
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-title">B. Tech. in Information Technology and Mathematics</div>
+                    
+                </div>
+            </div>
         </div>
-        <div id="imgDiv">
-          <img src="about_us.jpeg" id="aboutUsImg" alt="Italian Trulli">
+
+        <div class="text-block">
+            <!-- This is the new text block that will take up the other half. Initially showing University of Edinburgh content -->
+            <h4>Modules Taken</h4>
+            <p>Natural Language Processing, Machine Learning Practical, Extreme Computing, Image and Vision Computing, Natural Language Understanding, Pattern Recognition in Financial Data</p>
+            <h4>Dissertation Project (QA framework for long financial PDFs)</h4>
+            <p>Historical annual reports scraped for FTSE all-share accounting for 70GB data. </p>
+            <p>Implemented Map Reduce with ranking to perform Question Answering for extracting business insights. </p>
+            <p>16% improvements in results with equivalent processing time compared to RAG. </p>
         </div>
+
+        <!-- Add more timeline items as needed -->
+      </div>
     </section>
+  
+    <!-- Skills -->
+    <section id="skills">
+      <div class="content">
+        <h2>Skills</h2>
+        <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="content">
+        <h2>Projects</h2>
+        <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+      <div class="content">
+        <h2>Contact Me</h2>
+        <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </section>
+
+
   </div>
 
 </body>
 </html>
 
-<script>
-const container = document.getElementById('container');
-const sections = document.querySelectorAll('section');
 
-let currentSection = 0;
-const sectionCount = sections.length;
-
-container.addEventListener('wheel', (e) => {
-    if (e.deltaY > 0) {
-        // Scrolling down
-        if (currentSection < sectionCount - 1) {
-            currentSection++;
-        }
-    } else {
-        // Scrolling up
-        if (currentSection > 0) {
-            currentSection--;
-        }
-    }
-
-    sections[currentSection].scrollIntoView({
-        behavior: 'smooth'
-    });
-});
-
-
-</script>
+<script src="scroll.js"></script>
 <script src="particles.js"></script>
 <script src="myjs.js"></script>
+<script src="timeline.js"></script>
