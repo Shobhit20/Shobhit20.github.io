@@ -422,3 +422,23 @@ section {
     margin-bottom: 10px;
     word-wrap: break-word;
 }
+
+/* Skills section */
+
+.content-skills {
+    flex: 1;                  /* Let the content-skills take up the remaining space (50% width) */
+    padding-right: 0px;      /* Space between content and image */
+  }
+  
+  .img-skills {
+    flex: 1;                  /* Ensure it takes up 50% of the width */
+    display: flex;
+    justify-content: center;   /* Center the image horizontally */
+    align-items: center;       /* Center the image vertically */
+  }
+  
+  .wordcloud-img img {
+    max-width: 100%;          /* Make the image responsive */
+    height: auto;             /* Maintain the aspect ratio of the image */
+    border-radius: 2500px;      /* Optional: adds rounded corners to the image */
+  }
