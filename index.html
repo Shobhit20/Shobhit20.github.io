@@ -2,8 +2,12 @@
 <html>
 <head>
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style_website.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     
@@ -15,11 +19,11 @@
         <div class="header">
             <ul class="nav-links">
                 <li><a href="#home"><button id="whiteNav" class="nav-btn home active">Home</button></a></li>
-                <li><a href="#about"><button id="blueNav" class="nav-btn about">About</button></a></li>
+                <li><a href="#about"><button id="blackNav" class="nav-btn about">About</button></a></li>
                 <li><a href="#experience"><button id="whiteNav" class="nav-btn experience">Experience</button></a></li>
-                <li><a href="#skills"><button id="blueNav" class="nav-btn skills">Skills</button></a></li>
-                <li><a href="#projects" href="#projects"><button id="whiteNav" class="nav-btn projects">Projects</button></a></li>
-                <li><a href="#contact"><button id="blueNav" class="nav-btn contact">Contact</button></a></li>
+                <li><a href="#skills"><button id="blackNav" class="nav-btn skills">Skills</button></a></li>
+                <li><a href="#projects"><button id="whiteNav" class="nav-btn projects">Projects</button></a></li>
+                <li><a href="#contact-section"><button id="blackNav" class="nav-btn contact">Contact</button></a></li>
             </ul>
         </div>
     </nav>
@@ -37,11 +41,15 @@
           <img src="./assets/smprofile.jpeg" alt="Shobhit Maheshwari Profile Picture" />
         </div>
         <div class="section_text">
-          <h1 class="title_1">Shobhit Maheshwari</h1>
-          <h1 class="title_1">Data Scientist, Machine Learning</h1>
+          <p class="title_1">Hello I'm</h1>
+          <p class="title_1">Shobhit Maheshwari</h1>
+          <p class="title_1">Data Scientist, Machine Learning</h1>
           <div class="btn_container">
-            <button class="btn_color" onclick="location.href='./#contact'">
-              Contact Info
+            <button class="btn_color">
+              <a href='#contact-section'>
+                Contact Info
+              </a>
+              
             </button>
           </div>
         </div>
@@ -49,18 +57,39 @@
     </section>
 
     <!-- About -->
-    <section id="about">
-        <div class="content">
-            <h1 class="title_2">About Me</h1>
-            <div class="text_container">
-                <p>I have a background in Mechanical Engineering and my journey into data science and machine learning is a captivating evolution. I've always been drawn to the world of problem-solving, and data provides the perfect canvas for my curious mind to explore and innovate.</p>
-                <p>What excites me most about this field is its constant evolution, dynamic challenges and the continuous learning it demands. I firmly believe in the transformative power of data to reshape industries and drive innovation, and I'm here to be a part of that transformation.</p>
-                <p>Beyond data, I indulge in my love for sports, prioritize a healthy lifestyle and find joy in the rhythm of good music. These interests provide balance, fuel creativity and keep me energized for data's challenges.</p>
-            </div>
-        </div>
-        
-    </section>
+    <section id="about" class="about">
+      <div class="about-container">
+      <div class="top-section clearfix">
+          <div class="image-left">
+              <img src="assets/profile1.jpeg" alt="Image 1">
+          </div>
+          <div class="text-right">
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel nisi 
+                  auctor, varius eros at, gravida neque. Duis sollicitudin elit id neque dictum, 
+                  in tincidunt nunc egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel nisi 
+                  auctor, varius eros at, gravida neque. Duis sollicitudin elit id neque dictum, 
+                  in tincidunt nunc egestas. 
+              </p>
+          </div>
+      </div>
 
+      <div class="bottom-section clearfix">
+          <div class="text-left">
+              <p>
+                  Curabitur pulvinar, magna a posuere aliquet, ipsum nunc tristique purus, non 
+                  ullamcorper lectus purus sit amet odio. Pellentesque habitant morbi tristique 
+                  senectus et netus et malesuada fames ac turpis egestas.Curabitur pulvinar, magna a posuere aliquet, ipsum nunc tristique purus, non 
+                  ullamcorper lectus purus sit amet odio. Pellentesque habitant morbi tristique 
+                  senectus et netus et malesuada fames ac turpis egestas.Curabitur pulvinar.
+              </p>
+          </div>
+          <div class="image-right">
+              <img src="assets/profile2.jpeg" alt="Image 2">
+          </div>
+      </div>
+    </div>
+  </section>
     <!-- Experience -->
     <section id="experience">
       <div class="timeline">
@@ -165,12 +194,43 @@
     </section>
 
     <!-- Contact Us -->
-    <section id="contact">
-      <div class="content">
-        <h2>Contact Me</h2>
-        <p>lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <section id="contact-section" class="contact-section">
+      <div class="contact-form">
+          <h2>Get in Touch</h2>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="query">Your Query:</label>
+                  <textarea id="query" name="query" rows="5" required></textarea>
+              </div>
+              <button type="submit">Submit</button>
+          </form>
       </div>
-    </section>
+      <div class="contact-details">
+        <h2>Our Contact Details</h2>
+        <p></p>
+        <p><i class="fas fa-map-marker-alt"></i> 87/7 Saughton Mains St., Edinburgh, EH11 3HB</p>
+        <p><i class="fas fa-phone"></i> +44-7826679948</p>
+        <p><i class="fas fa-envelope"></i> shobhit.workds@domain.com</p>
+        <p class="follow-us">
+            <strong>Online Handles:</strong>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/shobhit-maheshwari-0381b5113/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Shobhit20" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/shobhit.maheshwari.716" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/shobhit_m20/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               
+            </ul>
+        </p>
+    </div>
+</section>
 
 
   </div>

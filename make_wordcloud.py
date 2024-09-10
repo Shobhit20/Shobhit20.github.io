@@ -33,10 +33,10 @@ def plot_wordcloud(train):
     mask = 255 * mask.astype(int)
 
     wordcloud = WordCloud(
-        background_color='#156082',  # Background color
+        background_color='#000000',  # Background color
         width=1600, height=1600,  # Higher resolution canvas
         mask=mask,  # Apply circular mask
-        contour_color='#156082',  # White contour around the circle
+        contour_color='#000000',  # White contour around the circle
         contour_width=1,  # Contour thickness
         color_func=lambda *args, **kwargs: "white",  # Set text color to white
         max_words=200,  # Maximum number of words

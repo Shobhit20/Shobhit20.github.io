@@ -59,9 +59,8 @@ section {
 }
 
 
-
 .nav-links .nav-btn {
-    color: #156082;
+    color: #000000;
     position: relative;
     background: none; /* No background color */
     border: none; /* Remove default button border */
@@ -79,7 +78,7 @@ section {
     bottom: 0;
     width: 0;
     height: 2px; /* Underline thickness */
-    background-color: #156082; /* Underline color */
+    background-color: #000000; /* Underline color */
     transition: width 0.5s ease; /* Smooth transition for underline width */
 }
 
@@ -91,13 +90,13 @@ section {
     width: 0;
     height: 2px; /* Underline thickness */
     background-color: white;
-    color: #156082;
+    color: #000000;
     transition: width 0.5s ease; /* Smooth transition for underline width */
 }
 
 /* Blue background with white text (for About, Skills, and Contact) */
 .nav-btn.blue-active {
-    background-color: #156082;
+    background-color: #000000;
     color: white;
 }
   
@@ -107,12 +106,12 @@ section {
 
 
   
-#blueNav.active {
+#blackNav.active {
     background-color: #fff;
-    color: #156082;
+    color: #000000;
   }
 #whiteNav.active {
-    background-color: #156082;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -129,7 +128,7 @@ section {
     width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
-	background: #156082;
+	background: #000000;
     color: white;    
 }
 
@@ -145,7 +144,7 @@ section {
     width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
-	background: #156082;
+	background: #000000;
 }
 
 #projects {
@@ -161,8 +160,14 @@ section {
     width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
-	background: #156082;
+	background: #000000;
 }
+.title_1{
+    font-size: 40px;
+    padding: none;
+    margin: none;
+}
+
 
 #particles-js {
     position: absolute;
@@ -178,7 +183,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the content */
-    z-index: 1; /* Overlay content above background */
+    z-index: 2; /* Overlay content above background */
     display: flex; /* Flexbox for layout */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
@@ -200,34 +205,44 @@ section {
 
   .section_pic_container img {
     border-radius: 50%; /* Makes the profile picture circular */
-    width: 400px; /* Adjust size as needed */
-    height: 400px; /* Adjust size as needed */
+    width: 40vh; /* Adjust size as needed */
+    height: 40vh; /* Adjust size as needed */
     border: 10px solid #fff; /* White border, adjust thickness and color as needed */
-    box-shadow: 0 0 0 20px #156082; 
-    z-index: 5;
+    box-shadow: 0 0 0 30px #000000; 
     margin-right:60px;
   }
   
   .section_text {
     max-width: 600px; /* Adjust width as needed */
-    color: #156082; /* Text color */
+    color: #000000; /* Text color */
     text-align: left; /* Align text to the left */
     font-size: 30px;
     margin-left:60px
   }
 
 .btn_color {
-    background-color: #156082; /* Adjust button color */
+    background-color: #000000; /* Adjust button color */
     color: #fff; /* Button text color */
-    border: none;
+    border: 1px solid #000000;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+.btn_color a{
+    text-decoration: none;
+    color: #fff; /* Button text color */
+    
+}
+
 .btn_color:hover {
-    background-color: #156082; /* Adjust hover color */
+    background: #fff; /* Adjust hover color */
+    color: #000000;
+}
+.btn_color a:hover{
+    text-decoration: none;
+    color: #000000; /* Button text color */
     
 }
 
@@ -235,40 +250,60 @@ section {
 
 /* About section */
 
-.title_2 {
-    font-size: 2.5rem;
-    position: relative;
-}
 
-.title_2::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3.5px;
-    background: linear-gradient(90deg, #6091cc, #ef8ebf);
-    border-radius: 1px;
-}
 
-.text_container {
-    margin: 2rem auto;
-}
-
-.text_container p {
-    color: #fff;
-    line-height: 1.6;
-    text-align: left;
+.about-container{
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    padding: 100px;
 }
 
 
-:focus::-webkit-input-placeholder {
-    opacity: 0;
-    transform: translateY(-20px);
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
+.top-section .text-right {
+    float: right;
+    width: 75%; /* Text occupies 75% */
+    padding-left: 20px;
 }
+
+.top-section .image-left {
+    float: left;
+    width: 25%; /* Image occupies 25% */
+}
+.top-section .image-left img {
+    border-radius: 50%; /* Makes the profile picture circular */
+    width: 25vh; /* Adjust size as needed */
+    height: 25vh; /* Adjust size as needed */
+    border: 5px solid #000000; /* White border, adjust thickness and color as needed */
+    box-shadow: 0 0 0 10px #fff; 
+    margin-left:60px;
+    margin-top:60px
+}
+
+/* Bottom Section */
+.bottom-section .text-left {
+    float: left;
+    width: 75%; /* Text occupies 75% */
+    padding-right: 20px;
+}
+
+.bottom-section .image-right {
+    float: right;
+    width: 25%; /* Image occupies 25% */
+}
+
+.bottom-section .image-right img {
+    border-radius: 50%; /* Makes the profile picture circular */
+    width: 25vh; /* Adjust size as needed */
+    height: 25vh; /* Adjust size as needed */
+    border: 5px solid #000000; /* White border, adjust thickness and color as needed */
+    box-shadow: 0 0 0 10px #fff; 
+    margin-left:60px;
+    margin-top:60px
+}
+
+
+  
 
 
 /* Experience section */
@@ -296,7 +331,7 @@ section {
     height:60%;
     padding: 20px;
     font-size: 15px;
-    color: #156082;
+    color: #000000;
     margin-top: 100px;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -317,7 +352,7 @@ section {
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     overflow: hidden; /* Prevents content from spilling out before expansion */
     height: 80px; /* Initial collapsed height */
-    color: #156082;
+    color: #000000;
     font-size: 15px;
     font-weight: bold;
     display: flex; /* Enable Flexbox */
@@ -326,13 +361,10 @@ section {
 }
 
 
-
-
 .timeline-img {
     position: relative;
-    z-index: 1;
     background-color: white;
-    border: 5px solid #156082;
+    border: 5px solid #000000;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -348,7 +380,7 @@ section {
 
 
 .timeline-content {
-    background: #156082;
+    background: #000000;
     padding-left: 10px;
     border-radius: 8px;
     margin-left: 20px;
@@ -440,5 +472,136 @@ section {
   .wordcloud-img img {
     max-width: 100%;          /* Make the image responsive */
     height: auto;             /* Maintain the aspect ratio of the image */
-    border-radius: 2500px;      /* Optional: adds rounded corners to the image */
+    border-radius: 100px;      /* Optional: adds rounded corners to the image */
   }
+
+  
+
+/* Contact Section */
+/* Base styles */
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align headers to the top */
+    width: 100%;
+    background-color: #000000;
+    padding: 40px; /* Ample spacing */
+    min-height: 50%; /* Ensures the section takes up a good portion of the screen */
+    padding-top: 10%;
+}
+
+.contact-form, .contact-details {
+    width: 50%; /* Reduced width of the sections to 50% */
+    max-width: 500px; /* Optional: Limit max width to prevent it from stretching on large screens */
+    margin: 0 auto; /* Center the sections */
+}
+
+
+
+.contact-form {
+    padding-right: 25px;
+    margin-right: -0.5%; /* Shift the form slightly towards the right */
+}
+
+.contact-details {
+    padding-left: 25px;
+    margin-left: -0.5%; /* Shift the details slightly towards the left */
+}
+
+.contact-form h2, .contact-details h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #fff;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #fff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.contact-details p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details p i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-details ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-details ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.contact-details ul li a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        width: 90%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .contact-form, .contact-details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"] {
+        width: auto;
+    }
+}
