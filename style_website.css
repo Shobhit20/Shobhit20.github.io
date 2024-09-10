@@ -3,7 +3,7 @@
 html {
     scroll-behavior: smooth;
     overflow: hidden; /* Prevent default browser scroll */
-
+    
 }
 * {
     box-sizing: border-box;
@@ -457,10 +457,51 @@ section {
 
 /* Skills section */
 
-.content-skills {
-    flex: 1;                  /* Let the content-skills take up the remaining space (50% width) */
-    padding-right: 0px;      /* Space between content and image */
-  }
+.content-skills{
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.competency {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+}
+
+.competency:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    flex: 1;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.dot.full {
+    opacity: 1;
+}
+
+.dot.half {
+    opacity: 0.5;
+}
   
   .img-skills {
     flex: 1;                  /* Ensure it takes up 50% of the width */
@@ -477,8 +518,204 @@ section {
 
   
 
-/* Contact Section */
-/* Base styles */
+
+
+
+
+
+/* Projects Section */
+
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vH;
+    background-color: #F5F5F5;
+  }
+  
+  h1{
+    font-size: 40pt;
+    font-weight: 500;
+    color: #363638;
+  }
+  
+  .container-projects {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .item {
+    position: relative;
+    background: black;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+  }
+  
+  .item:hover{
+    cursor: pointer;
+  }
+  
+
+  
+  .item img {
+    vertical-align: top;
+    height: 310px;
+    opacity: 0.5;
+  }
+  
+  .item:hover img {
+    opacity: 0.2;
+  }
+  
+  .text{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    left: 10%;
+    color: #01A2AC;
+  }
+  
+  .text h3{
+    color: black;
+  }
+  
+  .item:hover .text{
+    top: 20%;
+  }
+  
+  .item:hover .button{
+    bottom: 20%;
+  }
+  
+  .item .button{
+    position: absolute;
+    bottom: -100px;
+    left: 25%;
+    width: 50%;
+    border: 3px solid #01A2AC;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover{
+    background-color: #01A2AC;
+    color: #F5F5F5;
+  }
+  
+  /* Modal */
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #F5F5F5;
+    margin: 5% auto;
+    box-sizing: border-box;
+    width: 700px;
+    max-height: 714px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .scale{
+    animation: scale 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes scale{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+  }
+  
+  #img{
+    width: 100%;
+    height: 450px;
+  }
+  
+  #details{
+    padding: 25px;
+    text-align: left;
+    position: relative;
+    height: 264px;
+    box-sizing: border-box;
+    border-top: 1px solid #363638;
+  }
+  
+  #details *{
+    transition: all .3s;
+  }
+  
+  #title{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  #details .button{
+    position: absolute;
+    width: 30%;
+    background-color: #01A2AC;
+    color: #F5F5F5;
+    text-align: center;
+    left: 25px;
+    bottom: 35px;
+    padding: 15px;
+  }
+  
+  #details i{
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    font-size: 3rem;
+    color: #01A2AC;
+  }
+  
+  #details .button:hover,
+  i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #363638;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
 
 /* Contact Section */
 .contact-section {
