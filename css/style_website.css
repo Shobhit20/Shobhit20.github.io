@@ -129,7 +129,7 @@ section {
     height: 100vh; /* Full viewport height */
     overflow: hidden;
 	background: #000000;
-    color: white;    
+    color: #fff;    
 }
 
 #experience {
@@ -162,15 +162,12 @@ section {
     overflow: hidden;
 	background: #000000;
 }
-.title_1{
-    font-size: 40px;
-    padding: none;
-    margin: none;
-}
+
 
 
 #particles-js {
     position: absolute;
+    background: white;
     top: 0;
     left: 0;
     width: 100%;
@@ -220,6 +217,12 @@ section {
     margin-left:60px
   }
 
+  .title_1{
+        font-size: 40px;
+        padding: 10px;
+        margin: 0;
+    }
+
 .btn_color {
     background-color: #000000; /* Adjust button color */
     color: #fff; /* Button text color */
@@ -229,21 +232,20 @@ section {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-.btn_color a{
+.btn_container{
+    padding-top:30px;
+    padding-left:10px;
+}
+.btn_container a{
     text-decoration: none;
     color: #fff; /* Button text color */
     
 }
 
+
 .btn_color:hover {
     background: #fff; /* Adjust hover color */
     color: #000000;
-}
-.btn_color a:hover{
-    text-decoration: none;
-    color: #000000; /* Button text color */
-    
 }
 
 
@@ -311,9 +313,12 @@ section {
     position: relative;
     padding: 0px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
 }
+
 .html-element, .text-block {
     width: 50%; /* Each half will take 50% of the container */
     padding: 20px; /* Optional: Add some padding for spacing */
@@ -328,11 +333,9 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height:60%;
-    padding: 20px;
+    height:80%;
     font-size: 15px;
     color: #000000;
-    margin-top: 100px;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
 }
@@ -506,8 +509,7 @@ section {
   .img-skills {
     flex: 1;                  /* Ensure it takes up 50% of the width */
     display: flex;
-    justify-content: center;   /* Center the image horizontally */
-    align-items: center;       /* Center the image vertically */
+
   }
   
   .wordcloud-img img {
@@ -532,13 +534,7 @@ section {
     align-items: center;
     justify-content: center;
     height: 100vH;
-    background-color: #F5F5F5;
-  }
-  
-  h1{
-    font-size: 40pt;
-    font-weight: 500;
-    color: #363638;
+    background-color: #fff;
   }
   
   .container-projects {
@@ -555,68 +551,42 @@ section {
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 320px;
-    max-width: 410px;
+    max-width: 25%;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
+    transition: transform 0.3s ease;
+    
   }
   
-  .item:hover{
+  .item:hover {
     cursor: pointer;
+    background: #fff;
+    transform: scale(1.05)
+  
+  }
+  .item:hover p {
+    color: #000000;
   }
   
 
-  
   .item img {
-    vertical-align: top;
-    height: 310px;
-    opacity: 0.5;
+    height: 250px;
+    opacity: 0.7;
   }
   
   .item:hover img {
-    opacity: 0.2;
+    opacity: 1;
   }
   
-  .text{
-    width: 80%;
-    height: 90%;
-    position: absolute;
-    left: 10%;
-    color: #01A2AC;
+  .text_proj{
+    color: #FFF;
+    font-size: 15px;
   }
   
-  .text h3{
-    color: black;
-  }
-  
-  .item:hover .text{
-    top: 20%;
-  }
-  
-  .item:hover .button{
-    bottom: 20%;
-  }
-  
-  .item .button{
-    position: absolute;
-    bottom: -100px;
-    left: 25%;
-    width: 50%;
-    border: 3px solid #01A2AC;
-    padding: 15px;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button:hover{
-    background-color: #01A2AC;
-    color: #F5F5F5;
-  }
-  
+
   /* Modal */
-  
   .modal {
     display: none;
     position: fixed;
@@ -625,19 +595,22 @@ section {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0,0,0,0.4);
   }
   
   .modal-content {
-    background-color: #F5F5F5;
+    background-color: #fff;
+    justify-content: center;
     margin: 5% auto;
     box-sizing: border-box;
-    width: 700px;
-    max-height: 714px;
+    width: 80%;
+    height: 80%; /* Ensure the height is fixed to allow scrolling */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow-y: auto; /* This allows vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling (optional) */
+    
   }
-  
   .scale{
     animation: scale 0.5s;
     animation-fill-mode: forwards;
@@ -648,54 +621,75 @@ section {
     to{transform: scale(1);}
   }
   
-  #img{
-    width: 100%;
-    height: 450px;
-  }
-  
+
   #details{
-    padding: 25px;
-    text-align: left;
-    position: relative;
+    display: flex;
+    flex-direction: column;     /* Arrange children in a column (default) */
+    align-items: center;        /* Center children horizontally */
+    justify-content: center; 
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
     height: 264px;
     box-sizing: border-box;
-    border-top: 1px solid #363638;
+    font-size: 20px;
   }
   
   #details *{
     transition: all .3s;
   }
-  
+ 
+
+  #img {
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+          /* Adjust the height of the image */
+  }
+
   #title{
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  #details .button{
-    position: absolute;
-    width: 30%;
-    background-color: #01A2AC;
-    color: #F5F5F5;
+    font-size: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     text-align: center;
-    left: 25px;
-    bottom: 35px;
-    padding: 15px;
   }
+  .btn_container-report {
+    display: flex;              /* Use Flexbox for button container */
+    gap: 10px;                  /* Space between button and icon */
+    align-items: center;        /* Vertically align items in the center */
+}
+  #details .button {
+    padding: 5px 20px;         /* Padding inside the button */
+    background-color: #000000;  /* Button background color */
+    color: #fff;
+    border: 1px solid #000000;               /* Button text color */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;            /* Cursor pointer on hover */
+    text-align: center;         /* Center text inside the button */
+    display: inline-block;      /* Allow button to fit content */
+}
+
   
   #details i{
-    position: absolute;
-    bottom: 30px;
-    right: 25px;
-    font-size: 3rem;
-    color: #01A2AC;
+
+    font-size: 32px;            /* Icon size */
+    color: #333;                /* Icon color */
+    cursor: pointer;            /* Cursor pointer on hover */
+    transition: color 0.3s;     /* Smooth color transition */
+
   }
   
   #details .button:hover,
   i:hover{
     cursor: pointer;
-    opacity: 0.8;
   }
-  
+  #details .button:hover{
+    color: #000000;
+    background: #fff;
+  }
   /* Close Button */
   .close {
     color: #aaa;
@@ -711,8 +705,6 @@ section {
     text-decoration: none;
     cursor: pointer;
   }
-
-
 
 
 

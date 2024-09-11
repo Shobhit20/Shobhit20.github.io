@@ -4,7 +4,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style_website.css"/>
+    <link rel="stylesheet" href="css/style_website.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -41,16 +41,30 @@
           <img src="./assets/smprofile.jpeg" alt="Shobhit Maheshwari Profile Picture" />
         </div>
         <div class="section_text">
-          <p class="title_1">Hello I'm</h1>
-          <p class="title_1">Shobhit Maheshwari</h1>
-          <p class="title_1">Data Scientist, Machine Learning</h1>
+          <p class="title_1"><strong>Hello, I'm</strong></h1>
+          <p class="title_1"><strong>Shobhit Maheshwari</strong></h1>
+          <p class="title_1">Data Scientist, Machine Learning Engineer </h1>
           <div class="btn_container">
-            <button class="btn_color">
-              <a href='#contact-section'>
-                Contact Info
-              </a>
+            <a href='assets/Shobhit Maheshwari Resume.pdf'>
+              <button class="btn_color">
+                  View Resume
+              </button>
+            </a>
               
+            
+            
+          <a href='assets/Shobhit Maheshwari CV.pdf'>
+            <button class="btn_color">
+              View CV
             </button>
+          </a>
+                
+          <a href='#contact-section'>
+            <button class="btn_color">
+              Contact Info
+            </button>
+          </a>
+            
           </div>
         </div>
       </div>
@@ -300,66 +314,64 @@
     
         <div class="container-projects">
           <div class="item" id="1">
-            <img src="https://images.unsplash.com/photo-1496492352121-593138d42a61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3542849cc0459345e3aa82a90ae51a01&auto=format&fit=crop&w=1350&q=80" alt="">
+            <img src="assets/llm.jpeg" alt="">
              
-            <div class="text">
-               <p>Short Des</p>
+            <div class="text_proj">
+               <p>Large Financial Documents QA using LLMs</p>
             </div>
-            <div class="button">Learn More</div>
           </div>
     
           <div class="item" id="2">
-            <img src="https://images.unsplash.com/photo-1496492352121-593138d42a61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3542849cc0459345e3aa82a90ae51a01&auto=format&fit=crop&w=1350&q=80" alt="">
-            <div class="text">
-              <p>Short Description</p>
+            <img src="assets/xray.jpeg" alt="">
+            <div class="text_proj">
+              <p>X-ray Image denoising using U-Net</p>
             </div>
-            <div class="button">Learn More</div>
           </div>
     
           <div class="item" id="3">
-            <img src="https://images.unsplash.com/photo-1515215676803-119c88d493cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=baf00747bfb9fe41ad9af8cf00dbebbf&auto=format&fit=crop&w=1350&q=80" alt="">
-            <div class="text">
-              <p>Short Description</p>
+            <img src="assets/nmt.jpeg" alt="">
+            <div class="text_proj">
+              <p>Neural Machine Translation (NMT)</p>
               </div>
-              <div class="button">Learn More</div>
           </div>
     
           <div class="item" id="4">
-            <img src="https://images.unsplash.com/photo-1496939217462-7d42e9a74f0e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e3be993a88feed38e4f5374ff3ba115&auto=format&fit=crop&w=1350&q=80g" alt="">
-            <div class="text">
-              <p>Short Description</p>
+            <img src="assets/analysis_vision.jpeg" alt="">
+            <div class="text_proj">
+              <p>Analysis of Classical and Deep models for Image Classification with perturbations</p>
             </div>
-            <div class="button">Learn More</div>
           </div>
     
           <div class="item" id="5">
-            <img src="https://images.unsplash.com/photo-1504875427817-937a8a12e167?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd7f399ba43093ead08e7dbf5e083f09&auto=format&fit=crop&w=1434&q=80" alt="">
-            <div class="text">
-              <p>Short Description</p>
+            <img src="assets/image-captioning.jpeg" alt="">
+            <div class="text_proj">
+              <p>Image Captioning using Flickr8K</p>
             </div>
-            <div class="button">Learn More</div>
           </div>
     
-          <div class="item" id="6">
-            <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f758b0379f730e73c03b6153aaad7cf1&auto=format&fit=crop&w=1350&q=80" alt="">
-            <div class="text">
-              <p>Short Description</p>
-            </div>
-            <div class="button">Learn More</div>
-          </div>
+         
       </div>
     
       <!-- Modal -->
       <div id="preview" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <img id="img" src="">
-          <div id="details">
-            <h3 id="title"></h3>
-            <p id="info">Some text</p>
-            <div class="button" id="live">View</div>
-              <i class="fab fa-github-square" id="github"></i>
+          <span class="close" href="#projects">&times;</span>
+          <h3 id="title"></h3>
+          <div id="img-container">
+            <img id="img" src="">
           </div>
+          <div id="details">
+            <p id="info">Some text</p>
+            
+
+            <div class="btn_container-report">
+              <div class="button" id="live">View Report</div>
+              <i class="fab fa-github" id="github"></i>
+            </div>
+          </div>
+          
+          
+          
         </div>
       </div>
     </section>
@@ -410,7 +422,8 @@
 </html>
 
 
-<script src="scroll.js"></script>
-<script src="particles.js"></script>
-<script src="myjs.js"></script>
-<script src="timeline.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/myjs.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/project.js"></script>
