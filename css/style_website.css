@@ -175,6 +175,8 @@ section {
     z-index: 2; /* Background layer */
 }
 
+/* Main Section */
+/* Base styles (for larger screens like desktops/laptops) */
 .overlay-content {
     position: absolute;
     top: 50%;
@@ -187,7 +189,7 @@ section {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
 }
-  
+
 .flex-container {
     display: flex; /* Flexbox for horizontal alignment */
     align-items: center; /* Center items vertically */
@@ -195,33 +197,33 @@ section {
     width: 80%; /* Adjust width as needed */
     max-width: 1200px; /* Adjust max-width as needed */
 }
-  
+
 .section_pic_container {
     margin-right: 0px; /* Adjust space between image and text */
 }
 
-  .section_pic_container img {
+.section_pic_container img {
     border-radius: 50%; /* Makes the profile picture circular */
     width: 40vh; /* Adjust size as needed */
     height: 40vh; /* Adjust size as needed */
     border: 10px solid #fff; /* White border, adjust thickness and color as needed */
     box-shadow: 0 0 0 30px #000000; 
     margin-right:60px;
-  }
-  
-  .section_text {
+}
+
+.section_text {
     max-width: 600px; /* Adjust width as needed */
     color: #000000; /* Text color */
     text-align: left; /* Align text to the left */
     font-size: 30px;
-    margin-left:60px
-  }
+    margin-left: 60px;
+}
 
-  .title_1{
-        font-size: 40px;
-        padding: 10px;
-        margin: 0;
-    }
+.title_1 {
+    font-size: 40px;
+    padding: 10px;
+    margin: 0;
+}
 
 .btn_color {
     background-color: #000000; /* Adjust button color */
@@ -232,20 +234,82 @@ section {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.btn_container{
-    padding-top:30px;
-    padding-left:10px;
-}
-.btn_container a{
-    text-decoration: none;
-    color: #fff; /* Button text color */
-    
+
+.btn_container {
+    padding-top: 30px;
+    padding-left: 10px;
 }
 
+.btn_container a {
+    text-decoration: none;
+    color: #fff; /* Button text color */
+}
 
 .btn_color:hover {
     background: #fff; /* Adjust hover color */
     color: #000000;
+}
+
+/* Mobile styles (for screens smaller than 768px, like phones) */
+@media (max-width: 768px) {
+    .overlay-content {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        height: auto; /* Adjust height */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        text-align: center; /* Center align for small screens */
+    }
+
+    .section_pic_container {
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .section_pic_container img {
+        width: 30vh; /* Adjust image size */
+        height: 30vh; /* Adjust image size */
+        margin-right: 0; /* Remove margin for mobile */
+        box-shadow: 0 0 0 20px #000000; /* Adjust shadow size */
+    }
+
+    .section_text {
+        font-size: 24px; /* Reduce font size for mobile */
+        margin-left: 0; /* Remove left margin */
+        padding: 10px;
+    }
+
+    .title_1 {
+        font-size: 32px; /* Reduce title size */
+    }
+
+    .btn_color {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    .btn_container {
+        padding-left: 0; /* Remove padding for mobile */
+        text-align: center; /* Center buttons on mobile */
+    }
+}
+
+/* Tablet styles (for screens between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .section_pic_container img {
+        width: 35vh; /* Adjust image size for tablets */
+        height: 35vh; /* Adjust image size for tablets */
+    }
+
+    .section_text {
+        font-size: 28px; /* Slightly smaller text on tablets */
+    }
+
+    .title_1 {
+        font-size: 36px; /* Adjust title size */
+    }
 }
 
 
