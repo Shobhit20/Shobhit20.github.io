@@ -316,60 +316,123 @@ section {
 
 /* About section */
 
+/* Base styles (for larger screens like laptops/desktops) */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
+}
 
-
-.about-container{
+.about-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box; /* Ensure padding doesn't affect width */
-    padding: 100px;
+    padding: 100px 20px; /* Use responsive padding */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    overflow: auto; /* Allow scrolling if content exceeds height */
 }
 
-
-.top-section .text-right {
-    float: right;
-    width: 75%; /* Text occupies 75% */
-    padding-left: 20px;
-    font-size: 1.5rem;
-    text-align: justify;
+.top-section, .bottom-section {
+    display: flex;
+    flex-direction: row; /* Row layout on larger screens */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box; /* Ensure padding is accounted for */
 }
 
-.top-section .image-left {
-    float: left;
-    width: 25%; /* Image occupies 25% */
-}
-.top-section .image-left img {
-    border-radius: 50%; /* Makes the profile picture circular */
-    width: 25vh; /* Adjust size as needed */
-    height: 25vh; /* Adjust size as needed */
-    border: 5px solid #000000; /* White border, adjust thickness and color as needed */
-    box-shadow: 0 0 0 10px #fff; 
-    margin-left:60px;
-    margin-top:60px
-}
-
-/* Bottom Section */
+.top-section .text-right, 
 .bottom-section .text-left {
-    float: left;
     width: 75%; /* Text occupies 75% */
-    padding-right: 20px;
+    padding: 20px;
     font-size: 1.5rem;
     text-align: justify;
+    box-sizing: border-box; /* Prevent content overflow */
 }
 
+.top-section .image-left, 
 .bottom-section .image-right {
-    float: right;
     width: 25%; /* Image occupies 25% */
+    text-align: center; /* Center the image */
 }
 
+.top-section .image-left img, 
 .bottom-section .image-right img {
     border-radius: 50%; /* Makes the profile picture circular */
     width: 25vh; /* Adjust size as needed */
     height: 25vh; /* Adjust size as needed */
     border: 5px solid #000000; /* White border, adjust thickness and color as needed */
     box-shadow: 0 0 0 10px #fff; 
-    margin-left:60px;
-    margin-top:60px
+    margin: 20px; /* Adjusted margins */
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 50px 20px; /* Reduce padding */
+        min-height: 100vh; /* Ensure full viewport height on mobile */
+    }
+
+    .top-section, .bottom-section {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+        text-align: center; /* Center text */
+        width: 100%;
+    }
+
+    .top-section .text-right, 
+    .bottom-section .text-left {
+        width: 100%; /* Text takes full width on mobile */
+        padding: 10px; /* Adjust padding */
+        font-size: 1.2rem; /* Smaller text on mobile */
+    }
+
+    .top-section .image-left, 
+    .bottom-section .image-right {
+        width: 50%; /* Make the image take 50% of the width */
+    }
+
+    .top-section .image-left img, 
+    .bottom-section .image-right img {
+        width: 20vh; /* Reduce image size for mobile */
+        height: 20vh;
+        margin: 10px 0; /* Add margin for spacing */
+    }
+}
+
+/* Tablet styles (for screens between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .about-container {
+        min-height: auto; /* Ensure full content display on tablets */
+    }
+
+    .top-section, .bottom-section {
+        flex-direction: column; /* Stack content vertically on tablets */
+        align-items: center;
+    }
+
+    .top-section .text-right, 
+    .bottom-section .text-left {
+        width: 100%; /* Full-width text */
+        font-size: 1.3rem; /* Slightly smaller text for tablet */
+    }
+
+    .top-section .image-left, 
+    .bottom-section .image-right {
+        width: 40%; /* Adjust image size for tablets */
+    }
+
+    .top-section .image-left img, 
+    .bottom-section .image-right img {
+        width: 22vh; /* Adjust image size */
+        height: 22vh;
+    }
 }
 
 
@@ -529,7 +592,10 @@ section {
 /* Skills section */
 
 .content-skills{
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -665,115 +731,167 @@ section {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
-  }
-  
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
     background-color: #fff;
-    justify-content: center;
     margin: 5% auto;
-    box-sizing: border-box;
-    width: 80%;
-    height: 80%; /* Ensure the height is fixed to allow scrolling */
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 800px; /* Max width for larger screens */
+    max-height: 80vh; /* Max height to prevent overflow from taking up too much screen */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    overflow-y: auto; /* This allows vertical scrolling */
-    overflow-x: hidden; /* Prevent horizontal scrolling (optional) */
-    
-  }
-  .scale{
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative; /* For absolute positioning of close button */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Rounded corners */
     animation: scale 0.5s;
     animation-fill-mode: forwards;
-  }
-  
-  @keyframes scale{
-    from{transform: scale(0);}
-    to{transform: scale(1);}
-  }
-  
+}
 
-  #details{
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#details {
     display: flex;
-    flex-direction: column;     /* Arrange children in a column (default) */
-    align-items: center;        /* Center children horizontally */
-    justify-content: center; 
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: center;
+    padding: 20px; /* Reduced padding for better responsiveness */
     text-align: justify;
-    height: 264px;
     box-sizing: border-box;
-    font-size: 20px;
-  }
-  
-  #details *{
+    font-size: 16px; /* Adjusted font size for better readability on smaller screens */
+}
+
+#details * {
     transition: all .3s;
-  }
- 
+}
 
-  #img {
-    
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-          /* Adjust the height of the image */
-  }
+#img {
+    display: block;
+    margin: 20px auto; /* Center image horizontally and add margin */
+    width: 80%; /* Adjust width to better fit small screens */
+    height: auto; /* Maintain aspect ratio */
+}
 
-  #title{
+#title {
     padding-bottom: 15px;
-    font-size: 28px;
+    font-size: 24px; /* Adjusted font size */
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     text-align: center;
-  }
-  .btn_container-report {
-    display: flex;              /* Use Flexbox for button container */
-    gap: 10px;                  /* Space between button and icon */
-    align-items: center;        /* Vertically align items in the center */
 }
-  #details .button {
-    padding: 5px 20px;         /* Padding inside the button */
-    background-color: #000000;  /* Button background color */
+
+.btn_container-report {
+    display: flex; /* Use Flexbox for button container */
+    gap: 10px; /* Space between button and icon */
+    align-items: center; /* Vertically align items in the center */
+    justify-content: center; /* Center align buttons */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+#details .button {
+    padding: 5px 20px; /* Padding inside the button */
+    background-color: #000000; /* Button background color */
     color: #fff;
-    border: 1px solid #000000;               /* Button text color */
-    border-radius: 5px;         /* Rounded corners */
-    cursor: pointer;            /* Cursor pointer on hover */
-    text-align: center;         /* Center text inside the button */
-    display: inline-block;      /* Allow button to fit content */
+    border: 1px solid #000000; /* Button border color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer on hover */
+    text-align: center; /* Center text inside the button */
+    display: inline-block; /* Allow button to fit content */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
-  
-  #details i{
+#details i {
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Icon color */
+    cursor: pointer; /* Cursor pointer on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
 
-    font-size: 32px;            /* Icon size */
-    color: #333;                /* Icon color */
-    cursor: pointer;            /* Cursor pointer on hover */
-    transition: color 0.3s;     /* Smooth color transition */
-
-  }
-  
-  #details .button:hover,
-  i:hover{
+#details .button:hover,
+i:hover {
     cursor: pointer;
-  }
-  #details .button:hover{
+}
+
+#details .button:hover {
     color: #000000;
     background: #fff;
-  }
-  /* Close Button */
-  .close {
+}
+
+/* Close Button */
+.close {
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
     position: absolute;
     right: 10px;
-  }
-  
-  .close:hover,
-  .close:focus {
+    top: 10px; /* Position close button at the top right corner */
+}
+
+.close:hover,
+.close:focus {
     color: #363638;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Adjust width for better fit on tablets */
+        padding: 15px; /* Adjust padding */
+    }
+
+    #details {
+        padding: 15px; /* Reduced padding for smaller screens */
+        font-size: 14px; /* Smaller font size for better readability */
+    }
+
+    #img {
+        width: 100%; /* Ensure the image scales properly */
+    }
+
+    #title {
+        font-size: 20px; /* Adjusted title size */
+    }
+
+    #details .button {
+        padding: 5px 15px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%; /* Full width on very small screens */
+        padding: 10px; /* Reduced padding */
+    }
+
+    #details {
+        padding: 10px; /* Reduced padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    #img {
+        width: 100%; /* Ensure image is responsive */
+    }
+
+    #title {
+        font-size: 18px; /* Adjusted title size */
+    }
+
+    #details .button {
+        padding: 5px 10px; /* Further adjusted button padding */
+    }
+}
+
 
 
 
@@ -873,6 +991,8 @@ button[type="submit"]:hover {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 .contact-details ul li a {
@@ -889,7 +1009,7 @@ button[type="submit"]:hover {
 @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         min-height: auto;
         padding: 20px;
     }
