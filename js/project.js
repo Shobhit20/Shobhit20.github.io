@@ -13,7 +13,7 @@ var modalInfo = {
       method into a GUI-based QA tool for PDF reports. Additionally, we created a dataset by scraping financial reports from all London \
       Stock Exchange (LSE) companies, providing a valuable resource for future research. Our framework enables financial experts to \
       analyze lengthy PDF documents more efficiently.",
-      link: "assets/poster.pdf",
+      link: "assets/Poster.pdf",
       github: "#"
     },
     2: {
