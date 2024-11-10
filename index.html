@@ -1,427 +1,225 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style_website.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
     
-</head>
-
-<body>
-  
-    <nav id="nav">
-        <div class="header">
-            <ul class="nav-links">
-                <li><a href="#home"><button id="whiteNav" class="nav-btn home active">Home</button></a></li>
-                <li><a href="#about"><button id="blackNav" class="nav-btn about">About</button></a></li>
-                <li><a href="#experience"><button id="whiteNav" class="nav-btn experience">Experience</button></a></li>
-                <li><a href="#skills"><button id="blackNav" class="nav-btn skills">Skills</button></a></li>
-                <li><a href="#projects"><button id="whiteNav" class="nav-btn projects">Projects</button></a></li>
-                <li><a href="#contact-section"><button id="blackNav" class="nav-btn contact">Contact</button></a></li>
-            </ul>
-        </div>
+    <nav>
+      <div class="nav-content">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-
-
-  <div class="container" id="container">
-
-    <!-- Particle js section -->
     <section id="home">
-      <div id="particles-js">
-      </div>
-      <div class="overlay-content">
-        <div class="section_pic_container">
-          <img src="./assets/smprofile.jpeg" alt="Shobhit Maheshwari Profile Picture" />
+      <div class="container">
+        <div class="profile-section">
+          <img src="assets/smprofile.jpeg" alt="Profile Photo" class="profile-photo">
         </div>
-        <div class="section_text">
-          <p class="title_1"><strong>Hello, I'm</strong></h1>
-          <p class="title_1"><strong>Shobhit Maheshwari</strong></h1>
-          <p class="title_1">Data Scientist, Machine Learning Engineer </h1>
-          <div class="btn_container">
-            <a href='assets/Shobhit Maheshwari Resume.pdf'>
-              <button class="btn_color">
-                  View Resume
-              </button>
-            </a>
-              
-            
-            
-          <a href='assets/Shobhit Maheshwari CV.pdf'>
-            <button class="btn_color">
-              View CV
-            </button>
-          </a>
-                
-          <a href='#contact-section'>
-            <button class="btn_color">
-              Contact Info
-            </button>
-          </a>
-            
+        <div class="intro-section">
+          <h1>Hello, I'm John Doe</h1>
+          <p>A passionate Full Stack Developer with expertise in creating beautiful and functional web applications. I specialize in modern web technologies and love turning complex problems into simple, beautiful solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-item">
+            <div class="text">
+              <p>With over 5 years of experience in web development, I've worked on various projects ranging from small business websites to large-scale enterprise applications. My approach combines technical expertise with creative problem-solving to deliver exceptional results.</p>
+            </div>
+            <div class="image">
+              <img src="assets/profile1.jpeg" alt="About Image 1">
+            </div>
+          </div>
+          <div class="about-item reverse">
+            <div class="text">
+              <p>Beyond coding, I'm passionate about user experience and staying current with the latest technology trends. I believe in writing clean, maintainable code and creating intuitive user interfaces that make a difference in people's lives.</p>
+            </div>
+            <div class="image">
+              <img src="assets/profile2.jpeg" alt="About Image 2">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-      <div class="about-container">
-      <div class="top-section clearfix">
-          <div class="image-left">
-              <img src="assets/profile1.jpeg" alt="Image 1">
-          </div>
-          <div class="text-right">
-              <p>
-                I am a Data Scientist with a strong foundation in Mathematics and four years of work experience in Data Science in the insurance-tech (Roadzen) and food-tech (Spoonshot) sector. During both these stints, I have handled multiple problem statements in the domain of Computer Vision and Natural Language Processing. I am adept in Python and highly skilled with advanced Machine Learning libraries like TensorFlow, PyTorch, and LangChain. I have successfully developed and deployed high-impact solutions in production environments. Currently, I am finishing off my M.Sc. in Data Science from the University of Edinburgh with my dissertation work focussing on QA frameworks using Large Language Models (LLMs). I'm excited by the rapid advancements in AI and how they enable solving real-world challenges.
-              </p>
-          </div>
-      </div>
-
-      <div class="bottom-section clearfix">
-          <div class="text-left">
-              <p>
-                
-                I am a huge sports fan, especially when it comes to Cricket and Football. I am a big Real Madrid supporter (hala madrid y nada mas!!). I have played Table Tennis at the state levels. Outside of sports, I am all about good food—whether I am cooking up something tasty or just enjoying a great meal. Music is always a part of my day too; I am constantly up for some Coke Studio jams or chilling to retro tunes. I am also a big animal lover, especially when it comes to dogs—Border Collies are my absolute favorite. Being around dogs always puts me in a good mood. I've recently discovered that Alpacas are literally nothing but just big dogs who run really fast so that is me holding Ozzy and Thomas on the right. It is those simple things—food, music, sports, and dogs/animals that make me happyyyyyyy.
-              </p>
-          </div>
-          <div class="image-right">
-              <img src="assets/profile2.jpeg" alt="Image 2">
-          </div>
-      </div>
-    </div>
-  </section>
-    <!-- Experience -->
     <section id="experience">
-      <div class="timeline">
-        <div class="html-element">
-
-            <div class="timeline-item">
-                <div class="timeline-date">Sep 2023 - Present  </div>
-                <div class="timeline-bar">
-                    <div class="timeline-img">
-                        <img src="assets/edinburghlogo.png" alt="University of Edinburgh">
-                    </div>
-                </div>
-                <div class="timeline-content active">
-                    <div class="timeline-title">M. Sc. in Data Science, University of Edinburgh</div>
-                   
-                </div>
+      <div class="container">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">2023 - Present</div>
+            <div class="content">
+              <h3>Senior Full Stack Developer</h3>
+              <h4>Tech Solutions Inc.</h4>
+              <p>Led development of enterprise-level applications using modern technologies.</p>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">Dec 2021 - Aug 2023</div>
-                <div class="timeline-bar">
-                    <div class="timeline-img">
-                        <img src="assets/roadzen.png" alt="Roadzen">
-                    </div>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-title">Senior Data Scientist, Roadzen</div>
-                    
-                </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">Jul 2020 - Dec 2021</div>
-              <div class="timeline-bar">
-                  <div class="timeline-img">
-                      <img src="assets/roadzen.png" alt="Roadzen">
-                  </div>
-              </div>
-              <div class="timeline-content">
-                  <div class="timeline-title">Data Scientist, Roadzen</div>
-                  
-              </div>
           </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">Jan 2019 - Jul 2020</div>
-                <div class="timeline-bar">
-                    <div class="timeline-img">
-                        <img src="assets/spoonshot.png" alt="Spoonshot">
-                    </div>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-title">Data Scientist, Spoonshot</div>
-                    
-                </div>
+          <div class="timeline-item">
+            <div class="date">2021 - 2023</div>
+            <div class="content">
+              <h3>Frontend Developer</h3>
+              <h4>Digital Innovations Co.</h4>
+              <p>Developed responsive web applications and improved user experience.</p>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">Aug 2015 - Jun 2019</div>
-                <div class="timeline-bar">
-                    <div class="timeline-img">
-                        <img src="assets/DU.png" alt="Delhi University">
-                    </div>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-title">B. Tech. in IT and Mathematics, University of Delhi</div>
-                    
-                </div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2020 - 2021</div>
+            <div class="content">
+              <h3>Web Developer</h3>
+              <h4>Creative Agency</h4>
+              <p>Created custom websites and implemented client requirements.</p>
             </div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2019 - 2020</div>
+            <div class="content">
+              <h3>Junior Developer</h3>
+              <h4>StartUp Hub</h4>
+              <p>Assisted in development of web applications and maintained existing projects.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2018 - 2019</div>
+            <div class="content">
+              <h3>Intern Developer</h3>
+              <h4>Tech Academy</h4>
+              <p>Analyzing financial reports, which often span hundreds of pages, is a time-consuming process. Large Language Models \
+                (LLMs) have improved the efficiency of Question Answering (QA) in such reports, but their context-length limitations pose \
+                challenges, especially when dealing with long documents. Additionally, LLMs struggle to retrieve information from the middle \
+                sections of really long context promopts. The MapReduce framework addresses this by dividing the PDF into smaller chunks, allowing efficient \
+                processing in two phases. We enhanced this method with rank filtering to optimize LangChain MapReduce, and compared it to a \
+                Retrieval Augmented Generation (RAG) system, our baseline for QA on the FinanceBench dataset. Unlike RAG, which relies on a \
+                retriever module that impacts performance, MapReduce bypasses this, resulting in a 16% efficiency gain. We incorporated this \
+                method into a GUI-based QA tool for PDF reports. Additionally, we created a dataset by scraping financial reports from all London \
+                Stock Exchange (LSE) companies, providing a valuable resource for future research. Our framework enables financial experts to \
+                analyze lengthy PDF documents more efficiently.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2017 - 2018</div>
+            <div class="content">
+              <h3>Freelance Developer</h3>
+              <h4>Self-Employed</h4>
+              <p>Worked on various client projects and built portfolio.</p>
+            </div>
+          </div>
         </div>
-
-        <div class="text-block">
-            <!-- This is the new text block that will take up the other half. Initially showing University of Edinburgh content -->
-            <h4>Modules Taken</h4>
-            <p>Natural Language Processing, Machine Learning Practical, Extreme Computing, Image and Vision Computing, Natural Language Understanding, Pattern Recognition in Financial Data</p>
-            <h4>Dissertation Project (QA framework for long financial PDFs)</h4>
-            <p>Historical annual reports scraped for FTSE all-share accounting for 70GB data. </p>
-            <p>Implemented Map Reduce with ranking to perform Question Answering for extracting business insights. </p>
-            <p>16% improvements in results with equivalent processing time compared to RAG. </p>
-        </div>
-
-        <!-- Add more timeline items as needed -->
       </div>
     </section>
-  
-    <!-- Skills -->
+
     <section id="skills">
-      <div class="content-skills">
-  
-          <div class="competency">
-              <span class="label">Python & SQL</span>
-              <div class="dots">
-                  <span class="dot full"></span>
-                  <span class="dot full"></span>
-                  <span class="dot full"></span>
-                  <span class="dot full"></span>
-                  <span class="dot half"></span>
-              </div>
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skills-text">
+            <h3>Technical Expertise</h3>
+            <p>Frontend Development: HTML5, CSS3, JavaScript, React, Vue.js</p>
+            <p>Backend Development: Node.js, Python, Java, SQL</p>
+            <p>DevOps: Docker, AWS, CI/CD, Git</p>
+            <p>Other: RESTful APIs, GraphQL, Microservices</p>
           </div>
-          <div class="competency">
-            <span class="label">Mathematics and Statistics</span>
-            <div class="dots">
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot half"></span>
-            </div>
-        </div>
-
-        <div class="competency">
-          <span class="label">Data Scraping</span>
-          <div class="dots">
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot half"></span>
+          <div class="skills-image">
+            <img src="assets/wordcloud_skills.png" alt="Skills visualization">
           </div>
         </div>
-
-        <div class="competency">
-            <span class="label">Data Wrangling & Preprocessing</span>
-            <div class="dots">
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot half"></span>
-                <span class="dot half"></span>
-            </div>
-        </div>
-
-        <div class="competency">
-          <span class="label">Exploratory Data Analysis</span>
-          <div class="dots">
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot half"></span>
-              <span class="dot half"></span>
-          </div>
-        </div>
-
-
-        <div class="competency">
-            <span class="label">Machine Learning and AI</span>
-            <div class="dots">
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot half"></span>
-            </div>
-        </div>
-
-        <div class="competency">
-          <span class="label">Computer Vision</span>
-          <div class="dots">
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot half"></span>
-          </div>
-        </div>
-
-        <div class="competency">
-          <span class="label">Natural Language Processing</span>
-          <div class="dots">
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot full"></span>
-              <span class="dot half"></span>
-          </div>
-        </div>
-
-        <div class="competency">
-            <span class="label">Big Data Tools (Hadoop, Spark)</span>
-            <div class="dots">
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot half"></span>
-                <span class="dot half"></span>
-            </div>
-        </div>
-
-        
-
-        <div class="competency">
-            <span class="label">Teamwork and Leadership skills</span>
-            <div class="dots">
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot full"></span>
-                <span class="dot half"></span>
-            </div>
-        </div>
-
-        
-
-      </div>
-      <div class="img-skills">
-        <div class="wordcloud-img">
-          <img src="assets/wordcloud_skills.png" alt="University of Edinburgh">
-      </div>
       </div>
     </section>
 
-    <!-- Projects -->
     <section id="projects">
-    
-        <div class="container-projects">
-          <div class="item" id="1">
-            <img src="assets/llm.jpeg" alt="">
-             
-            <div class="text_proj">
-               <p>Large Financial Documents QA using LLMs</p>
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="assets/llm.jpeg" alt="Project 1">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack e-commerce solution with payment integration and inventory management.</p>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
-    
-          <div class="item" id="2">
-            <img src="assets/xray.jpeg" alt="">
-            <div class="text_proj">
-              <p>X-ray Image denoising using U-Net</p>
+          <div class="project-card">
+            <img src="assets/analysis_vision.jpeg" alt="Project 2">
+            <h3>Task Management App</h3>
+            <p>A React-based task management application with real-time updates.</p>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
-    
-          <div class="item" id="3">
-            <img src="assets/nmt.jpeg" alt="">
-            <div class="text_proj">
-              <p>Neural Machine Translation (NMT)</p>
-              </div>
-          </div>
-    
-          <div class="item" id="4">
-            <img src="assets/analysis_vision.jpeg" alt="">
-            <div class="text_proj">
-              <p>Analysis of Classical and Deep models for Image Classification with perturbations</p>
+          <div class="project-card">
+            <img src="assets/nmt.jpeg" alt="Project 3">
+            <h3>Weather Dashboard</h3>
+            <p>A weather application using OpenWeather API with location tracking.</p>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
-    
-          <div class="item" id="5">
-            <img src="assets/image-captioning.jpeg" alt="">
-            <div class="text_proj">
-              <p>Image Captioning using Flickr8K</p>
+          <div class="project-card">
+            <img src="assets/xray.jpeg" alt="Project 4">
+            <h3>Social Media Analytics</h3>
+            <p>Analytics dashboard for social media metrics and engagement tracking.</p>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
-    
-         
-      </div>
-    
-      <!-- Modal -->
-      <div id="preview" class="modal">
-        <div class="modal-content">
-          <span class="close" href="#projects">&times;</span>
-          <h3 id="title"></h3>
-          <div id="img-container">
-            <img id="img" src="">
-          </div>
-          <div id="details">
-            <p id="info">Some text</p>
-            
-
-            <div class="btn_container-report">
-              <div class="button" id="live">View Report</div>
-              <i class="fab fa-github" id="github"></i>
+          <div class="project-card">
+            <img src="assets/image-captioning.jpeg" alt="Project 5">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website built with modern web technologies.</p>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
-          
-          
-          
         </div>
       </div>
     </section>
 
-    <!-- Contact Us -->
-    <section id="contact-section" class="contact-section">
-      <div class="contact-form">
-          <h2>Get in Touch</h2>
-          <form action="#" method="post">
-              <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="query">Your Query:</label>
-                  <textarea id="query" name="query" rows="5" required></textarea>
-              </div>
-              <button type="submit">Submit</button>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-text">
+            <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
           </form>
+        </div>
       </div>
-      <div class="contact-details">
-        <h2>Our Contact Details</h2>
-        <p></p>
-        <p><i class="fas fa-map-marker-alt"></i> 87/7 Saughton Mains St., Edinburgh, EH11 3HB</p>
-        <p><i class="fas fa-phone"></i> +44-7826679948</p>
-        <p><i class="fas fa-envelope"></i> shobhit.workds@domain.com</p>
-        <p class="follow-us">
-            <strong>Online Handles:</strong>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/shobhit-maheshwari-0381b5113/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Shobhit20" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.facebook.com/shobhit.maheshwari.716" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/shobhit_m20/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-               
-            </ul>
-        </p>
-    </div>
-</section>
+    </section>
 
-
-  </div>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
-
-
-<script src="js/scroll.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/myjs.js"></script>
-<script src="js/timeline.js"></script>
-<script src="js/project.js"></script>
