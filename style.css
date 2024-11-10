@@ -346,7 +346,7 @@ nav {
 .label {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: #8892b0;
   flex: 1;
 }
 
@@ -360,7 +360,7 @@ nav {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #8892b0;
   opacity: 0.5;
 }
 
@@ -380,12 +380,27 @@ nav {
 }
 
 .skills-image img {
+  width: 100%;
   max-width: 100%;
   padding-top: 100px;
   border-radius: 50%;  
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
 }
 
+
+/* Education section */
+
+#education {
+  padding: 100px 0;
+  background: rgba(10, 25, 47, 0.2);
+}
+
+#education h2 {
+  text-align: center;
+  color: #64ffda;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
 
 
 /* Projects Section */
@@ -435,6 +450,37 @@ nav {
   margin-bottom: 15px;
 }
 
+
+.project-card p {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  display: inline;
+}
+
+.more-text {
+  display: none; /* Hidden by default */
+}
+
+.dots-readmore {
+  display: inline;
+  color: #ccd6f6;
+}
+
+.read-more {
+  color: #64ffda;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
 .project-links {
   display: flex;
   gap: 15px;
@@ -448,6 +494,39 @@ nav {
 .project-links a:hover {
   text-decoration: underline;
 }
+
+/* Extra curricular section */
+
+#publication {
+  padding: 100px 0;
+  background: rgba(10, 25, 47, 0.2);
+}
+
+#publication h2 {
+  text-align: center;
+  color: #64ffda;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+
+.extrapointers h3 {
+  color: #ccd6f6;
+  margin-bottom: 10px;
+}
+
+.extrapointers h3::before {
+  content: "    •     "; /* Unicode for bullet point */
+  position: relative;
+  left: 0;
+  color: #ccd6f6; /* Adjust color as needed */
+  font-size: 1.2em; /* Adjust size if needed */
+  line-height: 1; /* Align bullet with text */
+}
+
+
+
+
 
 /* Contact Section */
 #contact {

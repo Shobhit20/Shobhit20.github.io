@@ -76,3 +76,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".read-more").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const projectCard = button.closest(".project-card");
+      const dots = projectCard.querySelector(".dots-readmore");
+      const moreText = projectCard.querySelector(".more-text");
+      const readMoreText = projectCard.querySelector(".read-more");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        moreText.style.display = "none";
+        readMoreText.textContent = "Read More";
+      } else {
+        dots.style.display = "none";
+        moreText.style.display = "inline";
+        readMoreText.textContent = "Read Less";
+      }
+    });
+  });
+});

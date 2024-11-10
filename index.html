@@ -18,7 +18,9 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#publication">Publications / Extracurricular</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -48,7 +50,7 @@
               </button>
             </a>
                   
-            <a href='#contact-section'>
+            <a href='#contact'>
               <button class="btn_color">
                 Contact Info
               </button>
@@ -269,7 +271,7 @@
             </div>
     
             <div class="competency">
-                <span class="label">Big Data Tools (Hadoop, Spark)</span>
+                <span class="label">Big Data Tools (Spark)</span>
                 <div class="dots">
                     <span class="dot full"></span>
                     <span class="dot full"></span>
@@ -302,58 +304,225 @@
       </div>
     </section>
 
-    <section id="projects">
+
+
+    <section id="education">
       <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <img src="assets/llm.jpeg" alt="Project 1">
-            <h3>E-Commerce Platform</h3>
-            <p>A full-stack e-commerce solution with payment integration and inventory management.</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">Sept 2023 - Nov 2024</div>
+            <div class="content">
+              <div class="company-info">
+                <img src="assets/edinburghlogo.png" alt="University of Edinburgh Logo" class="company-logo">
+                <div class="text-container">
+                  <h3>University of Edinburgh, Edinburgh, UK</h3>
+                  <h4>Grades: Distinction</h4>
+                </div>
+              </div> 
+                <p>Returning to academia for my Master’s allowed me to refresh my skills and deepen expertise after four years in data science, with the University of Edinburgh providing an ideal environment to engage with emerging technologies.</p> 
+                <p>I chose courses like NLP, Extreme Computing, and Financial Data Pattern Recognition, building a foundation to address industry challenges.</p> 
+                <p>For my dissertation, I developed a QA framework for financial analysis, scraping 70GB of annual reports and improving results by 16% over Retrieval-Augmented Generation (RAG) methods.</p> 
+                <p>This project refined my big data and NLP skills, effectively bridging academia and industry needs.</p> 
             </div>
           </div>
-          <div class="project-card">
-            <img src="assets/analysis_vision.jpeg" alt="Project 2">
-            <h3>Task Management App</h3>
-            <p>A React-based task management application with real-time updates.</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/nmt.jpeg" alt="Project 3">
-            <h3>Weather Dashboard</h3>
-            <p>A weather application using OpenWeather API with location tracking.</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/xray.jpeg" alt="Project 4">
-            <h3>Social Media Analytics</h3>
-            <p>Analytics dashboard for social media metrics and engagement tracking.</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/image-captioning.jpeg" alt="Project 5">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio website built with modern web technologies.</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <div class="timeline-item">
+            <div class="date">Aug 2015 – Jun 2019</div>
+            <div class="content">
+              <div class="company-info">
+                <img src="assets/DU.png" alt="University of Delhi Logo" class="company-logo">
+                <div class="text-container">
+                  <h3>University of Delhi, Delhi, India</h3>
+                  <h4>Grades: 89.5/100</h4>
+                </div>
+              </div>
+                <p>I completed my B.Tech in IT and Mathematics with a minor in Computational Biology, gaining a strong foundation in math, programming (OOP), and practical applications through project-based learning.</p> 
+                <p>Internships, including one at DRDO, refined my skills, and courses in NLP and AI sparked my interest in data science, shaping my career path.</p> 
+                <p>Beyond academics, I was active in the robotics society, managed social media, and organized a data science hackathon, building leadership skills. I started my data science career with a full-time role at Spoonshot after my final-semester internship there.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <img src="assets/llm.jpeg" alt="Project 1">
+            <h3>Large Financial Documents QA using LLMs</h3>
+            <p>
+              <span class="project-description">
+                This project dealt with building a framework for querying long PDF documents using RAG annd MapReduce approach.
+              </span>
+              <span class="dots-readmore">...</span>
+              <span class="more-text">
+                Analyzing financial reports, which often span hundreds of pages, is a time-consuming process. Large Language Models 
+                (LLMs) have improved the efficiency of Question Answering (QA) in such reports, but their context-length limitations pose 
+                challenges, especially when dealing with long documents. Additionally, LLMs struggle to retrieve information from the middle 
+                sections of really long context promopts. The MapReduce framework addresses this by dividing the PDF into smaller chunks, allowing efficient 
+                processing in two phases. We enhanced this method with rank filtering to optimize LangChain MapReduce, and compared it to a 
+                Retrieval Augmented Generation (RAG) system, our baseline for QA on the FinanceBench dataset. Unlike RAG, which relies on a 
+                retriever module that impacts performance, MapReduce bypasses this, resulting in a 16% efficiency gain. We incorporated this 
+                method into a GUI-based QA tool for PDF reports. Additionally, we created a dataset by scraping financial reports from all London 
+                Stock Exchange (LSE) companies, providing a valuable resource for future research. Our framework enables financial experts to 
+                analyze lengthy PDF documents more efficiently.
+              </span>
+              <a href="javascript:void(0);" class="read-more">Read More</a>
+
+            </p>
+            <div class="project-links">
+              <a href="assets/Poster.pdf"><i class="fas fa-external-link-alt"></i> View Poster</a>
+            </div>
+          </div>
+          
+
+          <div class="project-card">
+            <img src="assets/nmt.jpeg" alt="Project 3">
+            <h3>Neural Machine Translation (NMT)</h3>
+            <p>
+
+              <span class="project-description">
+                This project revolved around building a Neural Machine Translation model from scratch along with a conventional LSTM model with lexical decoding. 
+              </span>
+              <span class="dots-readmore">...</span>
+              <span class="more-text">
+                The experiments started with implementing
+                an LSTM model with attention. Based on the drawbacks of the previous model, we incorporate a lexical decoding module which 
+                The lexical model addresses this issue using a small feed-forward neural network(FFNN). The network takes a weighted average
+                of the source embeddings with respect to attention weights i.e. The output of the FFNN is combined with the decoder output. 
+                The lexical model outperforms the baseline model comfortably in all evaluation metrics. In order to improve the metrics further 
+                a Transformer model with Multi-headed attention module is implemented from scratch. The entire training is done using only 10k 
+                sentences for German to English Translation. Transformers are usually data hungry and thus lexical model performs better than 
+                the Transformer architecture but the training and loss curves indicate the ability that the Transformer architecture possess if 
+                given large data to train on. The model reached a BLEU score of 13.5 on just 10k sentences and the attention plots show the capability
+                of attention mechanism.
+              </span>
+              <a href="javascript:void(0);" class="read-more">Read More</a>
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Shobhit20/NLU-CW2"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Shobhit20/NLU-CW2/blob/main/NLU___cw2.pdf"><i class="fas fa-external-link-alt"></i> View Report</a>
+            </div>
+          </div>
+         
+          <div class="project-card">
+            <img src="assets/analysis_vision.jpeg" alt="Project 4">
+            <h3>Analysis of models for classification with perturbations</h3>
+            <p>
+              <span class="project-description">
+                This project investigates the performance of classical machine learning and deep learning models in 
+                classifying images of sports balls, from 15 different categories. 
+              </span>
+              <span class="dots-readmore">...</span>
+              <span class="more-text">
+                The dataset comprises over 9,000 images, 
+                testing the models ability to distinguish similar objects under varying conditions. The classical approach combines 
+                Scale-Invariant Feature Transform and Histogram of Oriented Gradients features to train Support Vector Machine (SVM) 
+                models, while the deep learning approach utilizes a Convolutional Neural Network (CNN) based on the ResNet-18 architecture.
+                The study tries to contrast the models performance using metrics such as accuracy, and F1 scores, and confusion matrices. 
+                We also analyze the robustness of our models by inducing image perturbations such as noise, blur, and occlusion. 
+                While the classical approach provides insights into feature importance, the CNN model significantly outperforms the 
+                SVM in terms of accuracy and robustness. This research contributes to the broader understanding of image classification techniques, 
+                highlighting the advantages of deep learning models in handling complex, real-world data scenarios.
+              </span>
+              <a href="javascript:void(0);" class="read-more">Read More</a>
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Shobhit20/classical_and_deep_comparison"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Shobhit20/classical_and_deep_comparison/blob/main/IVC%20report.pdf"><i class="fas fa-external-link-alt"></i> View Report</a>
+            </div>
+          </div>
+          
+
+          <div class="project-card">
+            <img src="assets/xray.jpeg" alt="Project 2">
+            <h3>X-ray Image Denoising using U-Net</h3>
+            <p>
+              <span class="project-description">
+                The is an X-ray denoising model built using U-Net implemented using PyTorch. 
+              </span>
+              <span class="dots-readmore">...</span>
+              <span class="more-text">
+                Medical imaging as a field has gained significant traction in recent times due to its applications, 
+                but one of the biggest problems that remain in these images is the aberrations that appear due to apparatus 
+                limitations or other environmental factors. X-rays are also not immune to such imperfections, but getting rid 
+                of this noise can result in efficient diagnostics, aiding the enhancement of image quality and accuracy in medical 
+                assessments. Previous attempts at generating noisy datasets for X-rays make an assumption of a uniform scatter of noise 
+                on the image. We induce an uneven scatter of noise in images, more towards the center of the X-ray, where the interaction 
+                of X-rays with tissues is greater. We train multiple incremental updates to our model on the NIH X-ray dataset after inducing noise using the core 
+                concepts of encoder-decoder architecture. We also propose an end-to-end pipeline stacking the two best-performing 
+                models. Despite training on a subset of only 10k images, the resultant de-noised images seem to be promising. The 
+                objective evaluation of the model is carried out using the Mean Squared Error (MSE), the Structural Similarity Index (SSIM), 
+                and the Peak Signal-to-Noise Ratio (PSNR).
+              </span>
+              <a href="javascript:void(0);" class="read-more">Read More</a>
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Shobhit20/MLP_Sem2/tree/main"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/Shobhit20/MLP_Sem2/blob/main/MLP_Coursework_4_Report.pdf"><i class="fas fa-external-link-alt"></i> View Report</a>
+            </div>
+          </div>
+        
+          
+          <div class="project-card">
+            <img src="assets/image-captioning.jpeg" alt="Project 5">
+            <h3>Image Captioning using Flickr8K</h3>
+            <p>
+              <span class="project-description">
+                An image captioning model which was used to describe the contents present in the image trained on Flickr8k dataset.
+              </span>
+              <span class="dots-readmore">...</span>
+              <span class="more-text">
+                Medical imaging as a field has gained significant traction in recent times due to its applications, 
+                but one of the biggest problems that remain in these images is the aberrations that appear due to apparatus 
+                limitations or other environmental factors. X-rays are also not immune to such imperfections, but getting rid 
+                of this noise can result in efficient diagnostics, aiding the enhancement of image quality and accuracy in medical 
+                assessments. Previous attempts at generating noisy datasets for X-rays make an assumption of a uniform scatter of noise 
+                on the image. We induce an uneven scatter of noise in images, more towards the center of the X-ray, where the interaction 
+                of X-rays with tissues is greater. We train multiple incremental updates to our model on the NIH X-ray dataset after inducing noise using the core 
+                concepts of encoder-decoder architecture. We also propose an end-to-end pipeline stacking the two best-performing 
+                models. Despite training on a subset of only 10k images, the resultant de-noised images seem to be promising. The 
+                objective evaluation of the model is carried out using the Mean Squared Error (MSE), the Structural Similarity Index (SSIM), 
+                and the Peak Signal-to-Noise Ratio (PSNR).
+              </span>
+              <a href="javascript:void(0);" class="read-more">Read More</a>
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Shobhit20/Image-Captioning/tree/master"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Shobhit20/Image-Captioning/blob/master/Report/Image%20Captioning.pdf"><i class="fas fa-external-link-alt"></i> View Report</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="publication">
+      <div class="container">
+        <h2>Publications / Extra Curriculars</h2>
+        <div class="extrapointers">
+          <h3>Publication 1 -	Mahima Kaushik*, Shobhit Maheshwari and Rddhima Raghunand, “Exploring Promises of siRNA in Cancer Therapeutics”, Current Cancer Therapy Reviews (2019) 15: 1. https://doi.org/10.2174/1573394715666190207130128 </h3>
+          <h3>Publication 2 - Maheshwari, Shobhit, and Rddhima Raghunand. “Multi-Character Recognition using EMNIST.” JIMS8I-International Journal of Information Communication and Computing Technology 6.1 (2018): 325-331</h3>
+          <h3>Built a covid-beds live tracking platform for checking availability of beds pan India by scraping state websites</h3>
+          <h3>Lead organiser of DataJam, a Data Science event hosted by the college, collaborating with a team of five.</h3>
+          <h3>Social Media Manager of Autonomi, an autonomous student run robotics society at college.</h3>
+          <h3>Represented the school table tennis team and played at the State level tournament for Rajasthan.</h3>
+
+        </div>
+        
+      </div>
+    </section>
+
+
+
+
 
     <section id="contact">
       <div class="container">
@@ -363,10 +532,10 @@
             <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
           </div>
           <div class="contact-links">
-            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="mailto:shobhit.workds@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/shobhit-maheshwari-0381b5113/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Shobhit20"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.instagram.com/shobhit_m20/"><i class="fab fa-instagram"></i> Instagram</a>
           </div>
           <form class="contact-form">
             <input type="text" placeholder="Your Name" required>
