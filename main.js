@@ -2,14 +2,14 @@
 particlesJS('particles-js', {
   particles: {
     number: {
-      value: 80,
+      value: 150,
       density: {
         enable: true,
         value_area: 800
       }
     },
     color: {
-      value: '#ccc'
+      value: '#64ffda'
     },
     shape: {
       type: 'circle'
@@ -25,7 +25,7 @@ particlesJS('particles-js', {
     line_linked: {
       enable: true,
       distance: 150,
-      color: '#ccc',
+      color: '#64ffda',
       opacity: 0.4,
       width: 1
     },
@@ -61,7 +61,8 @@ particlesJS('particles-js', {
       },
       push: {
         particles_nb: 4
-      }
+      },
+      
     }
   },
   retina_detect: true
