@@ -38,7 +38,7 @@ def plot_wordcloud(train):
         mask=mask,  # Apply circular mask
         contour_color='#0A192F',  # White contour around the circle
         contour_width=1,  # Contour thickness
-        color_func=lambda *args, **kwargs: "#64ffda",  # Set text color to white
+        color_func=lambda *args, **kwargs: "#FFD700",  # Set text color to white
         max_words=200,  # Maximum number of words
         collocations=False,  # Prevent splitting of phrases
         max_font_size=300,  # Higher maximum font size for better scaling in large image

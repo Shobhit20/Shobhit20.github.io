@@ -16,7 +16,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #0a192f;
+  background-color: #0A192F;
   z-index: -1;
 }
 
@@ -45,7 +45,7 @@ nav {
 }
 
 .logo {
-  color: #64ffda;
+  color: #FFD700;
   font-size: 24px;
   font-weight: bold;
 }
@@ -60,13 +60,13 @@ nav {
 }
 
 .nav-links a {
-  color: #ccd6f6;
+  color: #F5F5DC;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #64ffda;
+  color: #FFD700;
 }
 
 /* Home Section */
@@ -96,26 +96,26 @@ nav {
   max-width: 400px;
   border-radius: 50%;
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
-  border: 5px solid #fff; /* White border, adjust thickness and color as needed */
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.9);
+  border: 8px solid #F5F5DC; /* White border, adjust thickness and color as needed */
 }
 
 .intro-section {
-  color: #ccd6f6;
+  color: #F5F5DC;
 }
 
 .intro-section h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  color: #64ffda;
+  color: #FFD700;
 }
 
 
 
 .btn_color {
-  background-color: #64ffda; /* Adjust button color */
-  color: #0a192f; /* Button text color */
-  border: 1px solid #64ffda;
+  background-color: #FFD700; /* Adjust button color */
+  color: #0A192F; /* Button text color */
+  border: 1px solid #FFD700;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -132,8 +132,8 @@ nav {
 }
 
 .btn_color:hover {
-  background: #0a192f; /* Adjust hover color */
-  color: #64ffda;
+  background: #0A192F; /* Adjust hover color */
+  color: #FFD700;
 }
 
 
@@ -145,7 +145,7 @@ nav {
 
 #about h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -169,7 +169,7 @@ nav {
 
 .about-item .text {
   flex: 1;
-  color: #ccd6f6;
+  color: #F5F5DC;
   max-width: 50%;
 }
 
@@ -184,7 +184,7 @@ nav {
   max-width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 5px solid #fff; /* White border, adjust thickness and color as needed */
+  border: 8px solid #F5F5DC; /* White border, adjust thickness and color as needed */
 
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
 }
@@ -197,7 +197,7 @@ nav {
 
 #experience h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -211,7 +211,7 @@ nav {
   content: '';
   position: absolute;
   width: 2px;
-  background: #64ffda;
+  background: #FFD700;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -238,8 +238,8 @@ nav {
   width: 16px;
   height: 16px;
   right: -8px;
-  background-color: #64ffda;
-  border: 2px solid #64ffda;
+  background-color: #FFD700;
+  border: 2px solid #FFD700;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -253,7 +253,7 @@ nav {
   padding: 20px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
-  color: #ccd6f6;
+  color: #F5F5DC;
   
 }
 .company-info {
@@ -270,18 +270,18 @@ nav {
 }
 
 .timeline-item .date {
-  color: #64ffda;
+  color: #FFD700;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .timeline-item h3 {
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 5px;
 }
 
 .timeline-item h4 {
-  color: #8892b0;
+  color: #FFD700;
   margin-bottom: 10px;
 }
 .timeline-item p {
@@ -292,7 +292,7 @@ nav {
   content: "•"; /* Unicode for bullet point */
   position: absolute;
   left: 0;
-  color: #64ffda; /* Adjust color as needed */
+  color: #FFD700; /* Adjust color as needed */
   font-size: 1.2em; /* Adjust size if needed */
   line-height: 1; /* Align bullet with text */
 }
@@ -305,7 +305,7 @@ nav {
 
 #skills h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -322,7 +322,7 @@ nav {
 
 /* .skills-text {
   flex: 1;
-  color: #ccd6f6;
+  color: #F5F5DC;
 } */
 
 
@@ -346,7 +346,7 @@ nav {
 .label {
   font-size: 20px;
   font-weight: bold;
-  color: #ccd6f6;
+  color: #F5F5DC;
   flex: 1;
 }
 
@@ -360,7 +360,7 @@ nav {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #ccd6f6;
+  background-color: #F5F5DC;
   opacity: 0.5;
 }
 
@@ -397,7 +397,7 @@ nav {
 
 #education h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -410,7 +410,7 @@ nav {
 
 #blogs h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -423,7 +423,7 @@ nav {
 
 #projects h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -439,7 +439,7 @@ nav {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   padding: 20px;
-  color: #ccd6f6;
+  color: #F5F5DC;
   transition: transform 0.3s;
 }
 
@@ -454,7 +454,7 @@ nav {
 }
 
 .project-card h3 {
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 10px;
 }
 
@@ -478,11 +478,11 @@ nav {
 
 .dots-readmore {
   display: inline;
-  color: #ccd6f6;
+  color: #F5F5DC;
 }
 
 .read-more {
-  color: #64ffda;
+  color: #FFD700;
   cursor: pointer;
   text-decoration: none;
   margin-left: 5px;
@@ -499,7 +499,7 @@ nav {
 }
 
 .project-links a {
-  color: #64ffda;
+  color: #FFD700;
   text-decoration: none;
 }
 .projects-grid a {
@@ -520,14 +520,14 @@ nav {
 
 #publication h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
 
 
 .extrapointers h3 {
-  color: #ccd6f6;
+  color: #F5F5DC;
   margin-bottom: 10px;
 }
 
@@ -535,7 +535,7 @@ nav {
   content: "    •     "; /* Unicode for bullet point */
   position: relative;
   left: 0;
-  color: #ccd6f6; /* Adjust color as needed */
+  color: #F5F5DC; /* Adjust color as needed */
   font-size: 1.2em; /* Adjust size if needed */
   line-height: 1; /* Align bullet with text */
 }
@@ -552,7 +552,7 @@ nav {
 
 #contact h2 {
   text-align: center;
-  color: #64ffda;
+  color: #FFD700;
   margin-bottom: 50px;
   font-size: 36px;
 }
@@ -564,7 +564,7 @@ nav {
 }
 
 .contact-text {
-  color: #ccd6f6;
+  color: #F5F5DC;
   margin-bottom: 30px;
 }
 
@@ -576,14 +576,14 @@ nav {
 }
 
 .contact-links a {
-  color: #64ffda;
+  color: #FFD700;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .contact-links a:hover {
-  color: #ccd6f6;
+  color: #F5F5DC;
 }
 
 .contact-form {
@@ -597,15 +597,15 @@ nav {
   padding: 12px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #64ffda;
-  color: #ccd6f6;
+  border: 1px solid #FFD700;
+  color: #F5F5DC;
 }
 
 .contact-form button {
   padding: 12px 24px;
   background: transparent;
-  border: 1px solid #64ffda;
-  color: #64ffda;
+  border: 1px solid #FFD700;
+  color: #FFD700;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s;
