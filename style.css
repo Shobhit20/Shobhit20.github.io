@@ -502,6 +502,10 @@ nav {
   color: #64ffda;
   text-decoration: none;
 }
+.projects-grid a {
+  text-decoration: none;
+}
+
 
 .project-links a:hover {
   text-decoration: underline;
