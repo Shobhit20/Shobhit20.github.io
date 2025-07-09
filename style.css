@@ -403,6 +403,18 @@ nav {
 }
 
 
+#blogs {
+  padding: 100px 0;
+  background: rgba(10, 25, 47, 0.2);
+}
+
+#blogs h2 {
+  text-align: center;
+  color: #64ffda;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
 /* Projects Section */
 #projects {
   padding: 100px 0;
